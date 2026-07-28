@@ -1,0 +1,10 @@
+[YCD Version: 1]
+MinaModDef
+{
+	id: "xmarkburn",
+	name: "X Mark Burn",
+	modVersion: 1,
+	minGameVersion: 148667,
+	maxGameVersion: 999999,
+	loadPriority: 100,
+};

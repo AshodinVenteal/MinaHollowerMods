@@ -1,0 +1,24 @@
+# Native build output
+*.dll
+*.exp
+*.lib
+*.obj
+*.pdb
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Generated game data and local SDK checkout
+data/
+MinaModAPI/
+out/
+work/
+*.build_report.json
+
+# Editor and OS files
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,10 @@
+[YCD Version: 1]
+MinaModDef
+{
+	id: "clashrendclaymore",
+	name: "Clashrend Claymore",
+	modVersion: 1,
+	minGameVersion: 148667,
+	maxGameVersion: 148667,
+	loadPriority: 100,
+};

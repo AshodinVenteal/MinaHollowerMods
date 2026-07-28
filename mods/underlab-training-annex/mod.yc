@@ -1,0 +1,10 @@
+[YCD Version: 1]
+MinaModDef
+{
+	id: "underlab_training_annex",
+	name: "UnderLab Training Annex",
+	modVersion: 68,
+	minGameVersion: 148667,
+	maxGameVersion: 999999,
+	loadPriority: 200,
+};
