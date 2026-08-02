@@ -9,12 +9,16 @@ its X Mark / Burn runtime:
   pipeline for the custom weapon.
 - **X Mark / Burn** implements the runtime side of the X Mark/Burn combat system.
 
+The current packaged alpha is
+[v0.1.4-alpha](https://github.com/AshodinVenteal/MinaHollowerMods/releases/tag/v0.1.4-alpha).
+Release notes are tracked in [CHANGELOG.md](CHANGELOG.md).
+
 The native runtime targets Windows and C++17. It requires the experimental
 [MinaModAPI](https://github.com/YachtClubGames/MinaModAPI) headers and a current
 Visual Studio C++ toolchain.
 
 `mods/underlab-training-annex` is retained as a legacy room-construction
-example. It is not part of the build or release pipeline.
+example in source only. It is not part of the build or public release payload.
 
 ## Repository scope
 
