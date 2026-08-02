@@ -1,47 +1,67 @@
-# Clashrend Claymore Changelog
+**Version 0.1.4**
+X Mark and Burn
+--------------
+X Marks now apply more reliably on the first hit, in newly loaded rooms, and against moving, attacking, airborne, and flying enemies.
+Hitting a marked target again refreshes the mark, while multiple enemies can carry independent marks.
+Charged slams now convert marked targets into Burn more consistently across enemy states.
+Burn damage, flames, red palette effects, palette restoration, and cleanup now stay synchronized through the full effect.
+--------------
+Cross Blast
+--------------
+Cross Blast now keeps its three-step X, plus, X formation aligned with Mina across rooms and terrain.
+Removed duplicate explosion visuals while preserving the final center burst and volcanic ember follow-up.
+--------------
+HUD and Visuals
+--------------
+X Mark, Burn, and damage indicators now stay aligned beside the active enemy health bar and remain hidden in menus.
+Improved Claymore slash-smear and charged-slam crater timing, direction, and placement on Windows and Steam Deck.
+--------------
+Performance and Stability
+--------------
+Reduced combat slowdown while applying X Marks, converting Burn, and using Cross Blast.
+Reduced slowdown after entering interiors and returning outdoors.
+Improved stability in crowded encounters and during room transitions, especially on Steam Deck.
 
-## 0.1.4-alpha
 
-### X Mark and Burn
+**Version 0.1.3**
+Cross Blast
+--------------
+Replaced the original Boom Charge formation with a three-step X, plus, X explosion wave.
+Locked the wave direction to Mina's facing when the charged attack is released.
+Added a center blast to the final X and a volcanic ember geyser at its endpoint.
+Increased the geyser animation speed by 50% while preserving its one-damage ember hits.
+Reduced Cross Blast center damage from 10 to 7.5 and outer shockwave damage from 8 to 6.
+--------------
+Charge Visuals
+--------------
+Changed the held-charge flash to oscillate through the Claymore's red, black, and cream palette.
+Kept all Mina body colors fully opaque throughout every charge-flash phase.
+Removed the blue and transparent color substitutions inherited from the original hammer charge palettes.
+--------------
+Charged Slam Stability
+--------------
+Removed screen-wide flicker and texture corruption during ordinary charged slams.
+Improved directional crater placement and prevented craters from drifting after impact.
+--------------
+Performance and Stability
+--------------
+Improved Cross Blast and Claymore damage consistency across Windows and Steam Deck.
+Improved stability during charged attacks and room transitions.
 
-- Improved first-room and first-hit enemy discovery.
-- Improved mark refresh, reapplication, multi-enemy tracking, and cleanup.
-- Improved mark pinning and charged-slam Burn conversion across enemy states.
-- Synchronized Burn timing, flame effects, palette restoration, damage ticks,
-  and HUD state with the target lifetime.
-
-### HUD
-
-- Anchored X, Burn, and damage indicators to enemy health-bar endcaps.
-- Suppressed mechanic HUD effects while menus and pause overlays are active.
-
-### Cross Blast and Claymore Effects
-
-- Kept the X, plus, X Cross Blast aligned across rooms and terrain conditions.
-- Reduced inherited and duplicate explosion draws while retaining the final
-  center burst and volcanic embers.
-- Preserved the validated slash-smear and charged-slam crater behavior.
-
-### Performance and Platforms
-
-- Reduced repeated room, draw-host, enemy, mark, Burn, and Cross Blast scans.
-- Reduced transition slowdown after visiting interiors.
-- Added separate deterministic Windows and Steam Deck renderer builds.
-- Added a dedicated Proton descriptor path for the f0029 and f0030 smears.
-- Removed probes, test controls, saves, backups, and Training Annex content
-  from the public package.
-
-## 0.1.3-alpha
-
-- Added the three-step X, plus, X Cross Blast and volcanic ember geyser.
-- Locked Cross Blast to Mina's facing at release.
-- Added opaque red, black, and cream held-charge flashes.
-- Reduced Cross Blast center and outer-wave damage.
-- Restricted crater texture matching to prevent screen-wide corruption.
-
-## 0.1.2-alpha
-
-- Reduced interior transition and busy-room slowdown.
-- Clamped directional craters to their first-frame impact position.
-- Prevented crater drift and stale attack data from moving later impacts.
-- Updated the bundled ModAPI runtime and regular-play renderer profile.
+**Version 0.1.2**
+Performance
+--------------
+Reduced severe slowdown after entering and leaving interiors, including the UnderLab and the surrounding Ossex rooms.
+Reduced attack and crater slowdown during busy scenes.
+Improved Steam Deck performance and stability during room transitions.
+--------------
+Charged Slam Craters
+--------------
+Improved crater placement from the first visible impact frame.
+Prevented active craters from drifting when Mina or the camera moves.
+Prevented previous slams from affecting the position or direction of later craters.
+Restored the complete directional crater effect set.
+--------------
+Platform Stability
+--------------
+Improved consistency and stability across Windows and Steam Deck.
